@@ -1,0 +1,108 @@
+/* div that contains the navigation list */
+#nav {
+
+	height: 45px; /*for the collapsing div bug */
+	margin-top: 10px;
+
+}
+
+/* *** Begin Navigation Code *** */
+#mainNav {
+	
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#mainNav > li {
+	
+	float: left;
+	border-left: 2px solid #DDD;
+	position: relative;
+}
+
+#mainNav li a {
+	
+	display: block; /*so we can add padding and margins */
+	width: 180px;
+	padding: 15px 7px 15px 40px;
+	
+	text-align: center;
+	font-weight: bold;
+}
+
+#mainNav li:first-child {
+	
+	border: 0;
+}
+
+/* One by one we need to add background images */
+
+#mainNav #home {
+	background: url(../images/home.png) no-repeat 50px 5px;
+}
+
+#mainNav #programs {
+	background: url(../images/computer.png) no-repeat 35px 8px;
+}
+
+#mainNav #screenshots {
+	background: url(../images/screen.png) no-repeat 25px 9px;
+}
+
+#mainNav #contact {
+	background: url(../images/addressbook.png) no-repeat 40px 8px;
+}
+
+/* End Background Images */
+
+/* Begin Submenu Code */
+
+#mainNav .submenu {
+	/* Using absolute positioning (note that the #mainNav li elements have position: relative) so that the navigation
+	 * menu does not automatically expand in response to a greater specified width (300px vs 180) */
+	position: absolute;
+	top: 47px; /* 45px + 2px for border */
+	left: -2px; /* -2px to account for border */
+	
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	
+	/* Set necessary background, border, and width */
+	background: #BBB;
+	border-radius: 0 0 1em 1em;
+	border: 2px solid #DDD;
+	border-top: 0;
+	width: 300px;
+	z-index: 99;
+}
+
+#mainNav .submenu li:not(:first-child) { /* all of the list items except the first one should have a border-top */
+	border-top: 2px solid #DDD;
+	
+	opacity: 1;
+}
+
+#mainNav .submenu li a {
+	padding: 10px;
+	width: auto;
+}
+/* End Submenu Code */
+
+a:link, a:visited, a:hover {
+	color: #333;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+a:hover, #homepage #mainNav #home a, .programs #mainNav #programs > a,
+#web #mainNav #programs #webProgs a,
+#java #mainNav #programs #javaProgs a,
+#cplusplus #mainNav #programs #cplusplusProgs a,
+#screenshotsPage #mainNav #screenshots a, #contactPage #mainNav #contact a{
+	color: #EDEDED;
+}
+
+/* *** End Navigation Code *** */
+

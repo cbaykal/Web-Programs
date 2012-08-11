@@ -1,0 +1,61 @@
+/* Begin Feedback Code */
+
+#feedbackDiv > p {
+	text-align: center;
+}
+
+/* Begin Feedback Table Code */
+
+table {
+	
+	margin: 10px auto;
+	width: 830px;
+}
+
+table tr, table tr td {
+	padding: 10px 15px;
+	border: 1px solid #666
+}
+
+table tr:last-child td {
+	border: 0;
+}
+
+table td:last-child {
+	width: 70%;
+}
+
+table textarea, input[type='text'] {
+	width: 98%;
+}
+
+table textarea {
+	height: 200px;
+}
+
+table input[type='submit'] {
+	width: 150px;
+}
+
+/* End Feedback Table Code */
+
+p.warning, p.success{
+	font-style: italic;
+	padding: 5px 2px;
+	color: #F70505;
+	font-size: 13px;
+}
+
+p.success {
+	color: #56A0D3;
+	font-size: 14px;
+}
+
+#improvements p {
+	margin: 5px 0;
+}
+
+.invalid {
+	border: 1px solid #F70505;
+}
+/*End Feedback Code */

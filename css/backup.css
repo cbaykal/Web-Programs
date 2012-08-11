@@ -1,0 +1,5 @@
+background-image: linear-gradient(bottom, rgb(187,187,187) 0%, rgb(119,119,119) 75%); /* w3c standars but not fully implemented yet...*/
+	background-image: -o-linear-gradient(bottom, rgb(187,187,187) 0%, rgb(119,119,119) 75%); /*Firefox latest versions */
+	background-image: -moz-linear-gradient(bottom, rgb(187,187,187) 0%, rgb(119,119,119) 75%); /*Old Firefox versions */
+	background-image: -webkit-linear-gradient(bottom, rgb(187,187,187) 0%, rgb(119,119,119) 75%); /*Chrome Safari */
+	background-image: -ms-linear-gradient(bottom, rgb(187,187,187) 0%, rgb(119,119,119) 75%); /*IE */

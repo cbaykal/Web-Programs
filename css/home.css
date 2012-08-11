@@ -1,0 +1,190 @@
+h1, h2 {
+	margin: 15px 0;
+	border-bottom: 2px solid #CCC;
+	
+	font-size: 1.5em;
+	font-style: italic;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+h2 {
+	font-size: 1.25em;
+}
+
+a[href='#faq'], a[href*='wikipedia'] {
+	color: #56A0D3;
+	background: url(../images/faq_href.png) right center no-repeat; /* Should display a question mark */
+	padding-right: 20px;
+}
+
+#content p {
+	padding: 0 20px 20px;
+}
+
+/* Begin Updates */
+
+#updates {
+	height: 275px;
+}
+
+#updatesBox {
+	/* updatesBox should look like a distinct box within the updates div */
+	margin: 15px;
+	margin-top: 5px;
+	border: 2px solid #DDD;
+	box-shadow: 2px 2px 2px #CCC;
+	/*border-radius: 2em; /* Rounded edges */
+	
+	/* position should be relative so that we can position the elements inside using absolute positioning */
+	position: relative;
+	height: 200px;
+}
+
+#updatesBox #updatesLinks, #updatesBox .update {
+	position: absolute;  /* Absolutely position these elements. Actual positioning will be done in JavaScript. See js/home.js */
+	
+}
+
+#updatesBox #updatesLinks li {
+	position: absolute; /* the list items should also be absolutely positioned */
+	z-index: 100;
+}
+
+#updatesLinks a {
+	
+	opacity: 0.5; /* Dim the links at first */
+	filter: alpha(opacity = 50); /* For IE */
+	
+	padding: 7px 11px;
+	margin: 0 5px;
+	border-radius: 5em; /* To make it circle-like */
+	
+	background: #56A0D3;
+	color: #CCC;
+	
+}
+
+#updatesBox .update {
+	height: 200px;
+	width: 882px;
+	z-index: 5;
+}
+
+#updatesBox .update h3 {
+	padding: 8px 25px;
+	font-size: 1.3em;
+	font-weight: bold;
+	border-bottom: 1px solid #BBB;
+	color: #DDD;
+}
+
+#updatesBox .update .message {
+	margin: 25px 120px 0 40px;
+	text-align: justify;
+}
+
+#updatesBox .update .message p {
+	font-weight: bolder;
+	line-height: 1.5em;
+	color: #DDD;
+}
+
+#updatesLinks a:hover, #updatesLinks a.selected {
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+#updatesBox .update a[href*='screenshots.php'] {
+	color: #56A0D3;
+	background: url(../images/camera.png) right center no-repeat;
+	padding-right: 18px;
+}
+
+#updatesBox .update a[href$='web.php'], #updatesBox .update a[href$='c++.php']{
+	color: #56A0D3;
+	background: url(../images/computerRef.png) right center no-repeat;
+	padding-right: 22px;
+	margin-right: 3px; /* The computer thumbnail is a little too big, make some room for the next word */
+}
+
+/* Set pictures for different updates */
+#updatesBox > div.update:nth-of-type(n) {
+	background: url(../images/upd1_pic.jpg);
+}
+
+#updatesBox > div.update:nth-of-type(2n) {
+	background: url(../images/upd2_pic.jpg);
+}
+
+#updatesBox > div.update:nth-of-type(3n) {
+	background: url(../images/upd3_pic.jpg);
+}
+
+#updatesBox > div.update:nth-of-type(4n) {
+	background: url(../images/upd4_pic.jpg);
+}
+
+#updatesBox > div.update:nth-of-type(5n) {
+	background: url(../images/upd5_pic.jpg);
+}
+
+#updatesBox > div.update:nth-of-type(6n) {
+	background: url(../images/upd6_pic.jpg);
+}
+
+#updatesBox > div.update:nth-of-type(7n) {
+	background: url(../images/upd7_pic.jpg);
+}
+
+/* Begin FAQ */
+
+#faq p {
+	margin: 0 5px;
+}
+
+#faq h3 {
+	/* Some padding and changes in font to account for the FAQ images and make the text stand out */
+	padding: 15px 10px 15px 50px;
+	margin-left: 10px;
+	font-size: 1.2em;
+	font-style: italic;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#faq h3.closed {
+	background: url(../images/faq_open.png) left center no-repeat; /*When it's closed, an addition sign should show */
+}
+
+#faq h3.open {
+	background: url(../images/faq_close.png) left center no-repeat; /*When it's open, a X should show */
+}
+
+#faq #notso {
+	text-decoration: line-through;
+}
+
+#faq .answer {
+	padding: 0 20px 2px 60px;
+}
+
+#faq .answer:last-child {
+	margin-bottom: 20px;
+}
+
+#faq .answer blockquote {
+	font-style: italic;
+	text-align: justify;
+	margin: 10px 50px;
+	color: #444;
+}
+
+#faq a[href$='contact.php'], #updatesBox .update a[href$='contact.php']{
+	color: #56A0D3;
+	background: url(../images/mail.png) right center no-repeat;
+	padding-right: 18px;
+}
+
+/* End FAQ */

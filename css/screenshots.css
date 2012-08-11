@@ -1,0 +1,123 @@
+/* Begin gallery code */
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#gallery {
+	overflow: hidden;
+	text-align: center;
+}
+
+/* Begin code for larger image */
+#bigImageWrapper {
+	overflow: auto;
+	position: relative; /* So we can position the caption */
+	margin: 0 auto;
+	padding: 10px 0 0;
+	height: 460px;
+	z-index: 0;
+}
+
+#bigImageWrapper #disclaimer {
+	font-size: 0.8em;
+	font-style: italic;
+	text-align: justify;
+	margin: 0 100px 10px;
+}
+
+#bigImageWrapper img.mainImg {
+	
+	border: 3px solid #666;
+	box-shadow: 4px 4px 3px #888;
+	cursor: pointer;
+	padding: 1px;
+}
+
+/* End larger image code */
+
+/* Begin thumbnails code */
+#thumbnails {
+	
+	overflow: hidden; /* hidden so that absolute positioning works as intended and pictures disappear */
+	position: relative; /* in order to position the pictures with respect to the gallery div */
+	background: url(../images/binary_bg.jpg) repeat-x 0 0;
+	
+	/*
+	 * To calculate width: we want 3 thumbnail pictures to be displayed at a time. We have 
+	 * 64px from arrows, 280px from margins (70)*3images, and 536px from the picture widths,
+	 * 134*4images = 534px. 64px + 280px + 536px = 880px.
+	 * 
+	 */
+	
+	width: 880px;
+	height: 120px;
+	text-align: center;
+	
+	border: 2px solid #CCC;
+	box-shadow: 2px 2px 2px #666;
+	margin: 0 auto 10px;
+}
+
+#thumbnails li {
+	position: absolute;
+	margin: 0 35px;
+	border: 2px solid #555;
+	box-shadow: 2px 2px 2px #888;
+	
+	opacity: 0.75;
+	filter: alpha(opacity = 75); /*For IE*/
+}
+
+#thumbnails li.active {
+	opacity: 1.0;
+	filter: alpha(opacity = 100); /*For IE*/
+}
+
+#thumbnails li:nth-child(even) { /* Some rotation on the thumbnails */
+	
+	-moz-transform: rotate(-5deg);
+	-webkit-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+}
+
+#thumbnails li:nth-child(odd) { /* Rotation towards the other way */
+	
+	-moz-transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-tranfsorm: rotate(5deg);
+}
+
+/* End thumbnails code */
+
+/* Begin arrows code */
+
+img.arrow {
+	cursor: pointer;
+}
+
+img.right {
+	float: right;
+}
+
+img.left {
+	float: left;
+}
+
+img#arrowRight, img#arrowLeft {
+	margin-top: 44px; /* 120 total height of thumbnails div, 32px width of img. (120-32)/2 = 44px */
+}
+
+img#imgArrowRight {
+	margin-right: 40px;
+	margin-top: 194px; /* (420px - 32px)/2 = 194px */
+}
+
+img#imgArrowLeft {
+	margin-left: 40px;
+	margin-top: 194px; /* (420px - 32px)/2 = 194px */
+}
+/* End arrows code */

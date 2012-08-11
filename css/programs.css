@@ -1,0 +1,54 @@
+#tabs {
+	margin: 20px;
+	padding: 10px;
+	border: 2px solid #888;
+	border-radius: 2em 2em 2em 2em;
+	box-shadow: 2px 2px 2px #CCC;
+	
+	overflow: auto;
+	height: 300px;
+}
+
+#tabs p {
+	padding: 0 20px 20px;
+}
+
+#tabs #tabLinks li {
+	float: left;
+	padding: 0;
+}
+
+#tabs #tabLinks a {
+	display: block;
+	width: 120px;
+	text-align: center;
+	
+	padding: 6px 10px;
+	margin-right: 2px;
+	
+	border: 2px solid #666;
+	border-bottom: 0;
+	border-radius: 0.8em 0.8em 0 0; /* top-right and top-left get a curve */
+	
+	background: #999;
+}
+
+#tabs #tabLinks a.selected {
+	margin-bottom: -2px; /* By setting a negative margin, the panel's upper border will become invisible, creating a tab-like effect */
+	border-bottom: 2px solid #DDD;
+	background: #DDD;
+}
+
+#tabs #panels .panel {
+	clear: both; /* to prevent the divs from getting placed next to the links */
+	
+	border: 2px solid #666;
+	background: #DDD;
+	border-radius: 0 2em 1em 6em;
+	box-shadow: 2px 2px 2px #666;
+}
+
+#tabs #panels .panel p {
+	margin: 20px;
+	height: 200px;
+}
