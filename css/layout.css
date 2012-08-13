@@ -44,3 +44,8 @@ body {
 	border-radius: 10px;
 	margin: 10px 20px; /*some margins on both sides to center the navigation bar */
 }
+
+a { 
+	text-decoration: none;
+	font-size: 1em;
+}

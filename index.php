@@ -76,7 +76,7 @@
 						<div class="message">
 							<p>
 								Added screenshots section and implemented a slider. The screenshots section includes the majority of the software 
-								that I developed for the Eshelman School of Pharmacy. Click <a target="_blank" href="/~baykal/screenshots/screenshots.php">here</a> 
+								that I developed for the Eshelman School of Pharmacy. Click <a class="ref" target="_blank" href="/~baykal/screenshots/screenshots.php">here</a> 
 								to view the Screenshots section.
 							</p>
 						</div>
@@ -88,7 +88,7 @@
 						<div class="message">
 							<p>
 								Added Contact section. Now you can email me with any feedback or commentary that you may have. Click
-								<a href="/~baykal/contact/contact.php" target="_blank">here</a> to send me an email and let me know what you think!
+								<a class="ref" href="/~baykal/contact/contact.php" target="_blank">here</a> to send me an email and let me know what you think!
 							</p>
 						</div>
 					</div>
@@ -99,7 +99,7 @@
 						<div class="message">
 							<p>
 								Added the slide show you are seeing right now to the homepage. What do you think of it? Send me an email
-								<a href="/~baykal/contact/contact.php" target="_blank">here</a> and let me know!
+								<a class="ref" href="/~baykal/contact/contact.php" target="_blank">here</a> and let me know!
 							</p>
 						</div>
 					</div>
@@ -111,7 +111,7 @@
 							<p>
 								Finished laying out the template for the Programs section. The links to the parts under Programs 
 								should now work. However, I have not uploaded any source code yet. Want to see what it looks like?
-								Check out the <a href="/~baykal/programs/c++/c++.php" target="_blank">C++ Programs</a> section.
+								Check out the <a class="ref" href="/~baykal/programs/c++/c++.php" target="_blank">C++ Programs</a> section.
 							</p>
 						</div>
 					</div>
@@ -123,19 +123,18 @@
 							<p>
 								Finished implementing tabs layout, with the capability to host sources for multiple programs within a page, 
 								for all of the Programs sections. For example, check out the 
-								<a href="/~baykal/programs/web/web.php" target="_blank">Web Programs</a> page.
+								<a class="ref" href="/~baykal/programs/web/web.php" target="_blank">Web Programs</a> page.
 							</p>
 						</div>
 					</div>
 					<!-- End Update 7-->
 					<!-- Begin Update 8-->
 					<div id="update8" class="update">
-					<h3>August 11, 2012</h3>
+					<h3>August 12, 2012</h3>
 						<div class="message">
 							<p>
-								I had a had a big idea for the website: to allow visitors to register with the website so that they could comment
-								on the software that would be displayed in the programs section, rate them, etc. However, turns out UNC does not have
-								database (MySQL) support, bad news... I could utilize a flat-file database, but we'll see...
+								Got a few sources up on GitHub. Check out the <a class="ref" href="/~baykal/programs/web/web.php" target="_blank">Web Programs</a> 
+								and <a class="ref" href="/~baykal/programs/java/java.php" target="_blank">Java Programs</a> pages!
 							</p>
 						</div>
 					</div>
@@ -165,15 +164,15 @@
 				 	Without jQuery, this FAQ Section would have taken a lot more effort and time to fabricate.
 				</p>
 				<p>
-					jQuery is licensed under <a href="http://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT</a> and <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License" target="_blank">GPL</a> licenses. 
-					To read more about jQuery see <a href="http://en.wikipedia.org/wiki/JQuery" target="_blank">here.</a>
+					jQuery is licensed under <a class="ref" href="http://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT</a> and <a class="ref" href="http://en.wikipedia.org/wiki/GNU_General_Public_License" target="_blank">GPL</a> licenses. 
+					To read more about jQuery see <a class="ref" href="http://en.wikipedia.org/wiki/JQuery" target="_blank">here.</a>
 					To learn more about open source software, look <a href="http://en.wikipedia.org/wiki/Open-source_software" target="_blank">here.</a>
 				</p>
 				</div>
 				<h3>How can I give feedback about your work or this website?</h3>
 				<div class="answer">
 					<p>
-						Your feedback and comments are greatly appreciated. You can email me by clicking <a href="/~baykal/contact/contact.php" target="_blank">here</a>,
+						Your feedback and comments are greatly appreciated. You can email me by clicking <a class="ref" href="/~baykal/contact/contact.php" target="_blank">here</a>,
 						or alternatvely by visiting the 'Contact' page which is located in the navigation bar towards the upper right corner of the page.
 					</p>
 				</div>

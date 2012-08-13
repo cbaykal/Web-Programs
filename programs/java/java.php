@@ -31,8 +31,12 @@
 						<!-- Begin Tab 1 -->
 						<div id="panel1" class="panel">
 							<p>
-								Code coming soon.
+								A Java game that was inspired by a <a class="extLink" target="_blank" href="http://zetcode.com/tutorials/javagamestutorial/spaceinvaders/">tutorial.</a> 
+								I made additions of my own such as a scoreboard, the ability to have lives, boss level, etc. Enjoy.
 							</p>
+							<div class="codeDemo">
+								<a target="_blank" class="reference" href="https://github.com/cbaykal/Java-Programs">Source</a>
+							</div>
 						</div>
 						<!-- End Tab 1 -->
 						<!-- Begin Tab 2 -->

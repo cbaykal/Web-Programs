@@ -12,7 +12,9 @@ $(function() {
         $this.addClass("selected").blur(); 
         
         // ####### TEMPORARY UNTIL I GET THE SOURCE CODE #######
-        $($this.attr("href")).find("p").text("Code for " + $this.text() + " coming soon. Stay tuned.");
+        if($tabLinks.index($this) != 0) {
+            $($this.attr("href")).find("p").text("Code for " + $this.text() + " coming soon. Stay tuned.");
+        }
         
         $(".panel").hide(); // fadeOut the visible panel
         

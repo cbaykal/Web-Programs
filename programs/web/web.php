@@ -31,8 +31,12 @@
 						<!-- Begin Tab 1 -->
 						<div id="panel1" class="panel">
 							<p>
-								Code coming soon.
+								The code of this website!
 							</p>
+							<div class="codeDemo">
+								<a class="reference" target="_blank" href="http://github.com/cbaykal/Web-Programs">Source</a>
+								<a class="reference" target="_blank" href="http://www.unc.edu/~baykal/">Demo</a>
+							</div>
 						</div>
 						<!-- End Tab 1 -->
 						<!-- Begin Tab 2 -->

@@ -13,8 +13,13 @@ h2 {
 	font-size: 1.25em;
 }
 
+a { 
+	color: #56A0D3; 
+	text-decoration: none;
+	font-size: 1em;
+}
+
 a[href='#faq'], a[href*='wikipedia'] {
-	color: #56A0D3;
 	background: url(../images/faq_href.png) right center no-repeat; /* Should display a question mark */
 	padding-right: 20px;
 }
@@ -97,13 +102,11 @@ a[href='#faq'], a[href*='wikipedia'] {
 }
 
 #updatesBox .update a[href*='screenshots.php'] {
-	color: #56A0D3;
 	background: url(../images/camera.png) right center no-repeat;
 	padding-right: 18px;
 }
 
-#updatesBox .update a[href$='web.php'], #updatesBox .update a[href$='c++.php']{
-	color: #56A0D3;
+#updatesBox .update a[href$='web.php'], #updatesBox .update a[href$='c++.php'], #updatesBox .update a[href$='java.php'] {
 	background: url(../images/computerRef.png) right center no-repeat;
 	padding-right: 22px;
 	margin-right: 3px; /* The computer thumbnail is a little too big, make some room for the next word */
@@ -182,7 +185,6 @@ a[href='#faq'], a[href*='wikipedia'] {
 }
 
 #faq a[href$='contact.php'], #updatesBox .update a[href$='contact.php']{
-	color: #56A0D3;
 	background: url(../images/mail.png) right center no-repeat;
 	padding-right: 18px;
 }
