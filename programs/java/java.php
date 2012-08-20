@@ -22,8 +22,8 @@
 				<!-- Begin Tabs -->
 				<div id="tabs">
 					<ul id="tabLinks">
-						<li><a href="#panel1">Dog Chase</a></li>
-						<li><a href="#panel2">Alient Hunt</a></li>
+						<li><a href="#panel1">Alient Hunt</a></li>
+						<li><a href="#panel2">Dog Chase</a></li>
 						<li><a href="#panel3">Sushi Game</a></li>
 					</ul>
 					<!-- Begin Panels -->

@@ -24,7 +24,7 @@ $(function() {
         $imgArrowRight = $("img#imgArrowRight"),
         $imgArrowLeft = $("img#imgArrowLeft"),
         initLeftPos = parseInt($("img#arrowLeft").outerWidth(true), 10),
-        imgWidth = $listItems.first().outerWidth(true); // width of padding, border, and margin
+        imgWidth = 206, // width of padding, border, and margin
         range = imgWidth * (numPics - THUMBNAILS_DISPLAYED); // needed to scroll back to the beginning/end
      
      

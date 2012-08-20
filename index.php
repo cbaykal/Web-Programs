@@ -48,7 +48,6 @@
 						<li><a href="#update6">6</a></li>
 						<li><a href="#update7">7</a></li>
 						<li><a href="#update8">8</a></li>
-						<li><a href="#update9">9</a></li>
 					</ul>
 					<!-- End Tab Links-->
 					<!-- Begin Update 1-->
@@ -140,17 +139,6 @@
 						</div>
 					</div>
 					<!-- End Update 8-->
-					<!-- Begin Update 9-->
-					<div id="update9" class="update">
-					<h3>August 15, 2012</h3>
-						<div class="message">
-							<p>
-								Hi everyone. College starts soon for me so I won't be updating this page as often. In the meanwhile, I will be looking to advance my Java,
-								C++, and Web Development skills so that I can have more material to put up here.
-							</p>
-						</div>
-					</div>
-					<!-- End Update 9-->
 				</div>
 				<!-- End Updates Box -->
 			</div>
